@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="author" content="Geoff Middleton" />
+	<meta name="copyright" content="2003 Geoff Middleton" />
+	<meta name="generator" content="TypeText 1.1 Geoff Middleton" />
+	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+	<title>Air Systems :: EICAS Messages</title>
+
+	<meta name="description" content="APU BLEED VAL - APU Bleed Valve position disagrees with the commanded position" />
+
+	<!-- persistent stylesheet -->
+	<link href="../styles/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	<link href="../styles/handheld.css" rel="stylesheet" type="text/css" media="handheld" />
+
+	<script src="../scripts/library.js" type="text/javascript"></script>
+</head>
+<body onload="rounded();clearCurrentLink();">
+<div class="page" id="page"><div class="container"><!-- start content --><a name="top"></a>
+
+<script src="../scripts/header.js" type="text/javascript"></script>
+<noscript><p align="center"><a href="../noscript.htm" accesskey="c"><em>C</em>ONTENTS</a></p></noscript>
+
+<div class="pagemenu">
+<a href="air_conditioning.htm">Air Conditioning</a> 
+<a href="pressurisation.htm">Pressurisation</a> 
+<a href="equipment_cooling.htm">Equipment Cooling</a> 
+<a href="cargo_heat.htm">Cargo Heat</a> 
+<a href="pneumatics.htm">Pneumatics</a> 
+<a href="schematics_air_conditioning.htm">Schematics</a> 
+<a href="eicas.htm">EICAS Messages</a> 
+</div>
+
+<h1>Air Systems - EICAS Messages</h1>
+
+<table align="center" width="100%" cellspacing="0" class="cell_borders tr_top_align" summary="eicas warnings">
+	<tr>
+<th width="150">Message</th>
+<th width="75">Level</th>
+<th width="75">Light</th>
+<th>Condition</th>
+	</tr>
+
+	<tr>
+<td class="advisory">APU BLEED VAL</td>
+<td>Advisory</td>
+<td class="advisory">VALVE</td>
+<td>APU <a href="pneumatics.htm#apu_bleed_air_valve">Bleed Valve</a> position disagrees with the commanded position.</td>
+	</tr>
+
+	<tr>
+<td class="caution difference">L/R<br />BLD DUCT LEAK</td>
+<td>Caution</td>
+<td class="caution">DUCT LEAK</td>
+<td>A high temperature <a href="pneumatics.htm#duct_leak_warning">Bleed Air Leak</a> is detected.</td>
+	</tr>
+
+	<tr>
+<td class="advisory difference">BLEED ISLN VAL</td>
+<td>Advisory</td>
+<td class="advisory">VALVE</td>
+<td>Bleed <a href="pneumatics.htm#isolation_valve">Isolation Valve</a> position disagrees with the commanded position.</td>
+	</tr>
+
+	<tr>
+<td class="warning">CABIN ALTITUDE</td>
+<td>Warning</td>
+<td class="warning">CABIN ALTITUDE</td>
+<td><a href="pressurisation.htm#non-normal_indications">Cabin Altitude</a> excessive.</td>
+	</tr>
+
+	<tr>
+<td class="caution">CABIN AUTO INOP</td>
+<td>Caution</td>
+<td class="caution">AUTO INOP</td>
+<td><a href="pressurisation.htm#non-normal_indications">Automatic Pressurisation Control</a> has failed or the cabin altitude mode selector is in manual.</td>
+	</tr>
+
+	<tr>
+<td class="advisory difference">AFT/FWD/<span class="block300">MID</span><br />CABIN TEMP</td>
+<td>Advisory</td>
+<td class="advisory">INOP</td>
+<td>A fault in the <a href="air_conditioning.htm#compartment_temperature_inop">Zone Temperature Controller</a> or <a href="air_conditioning.htm#trim_air">Trim Air</a> switch OFF.</td>
+	</tr>
+
+	<tr>
+<td class="advisory">L/R<br />ENG BLEED OFF</td>
+<td>Advisory</td>
+<td class="advisory">OFF</td>
+<td>Engine <a href="pneumatics.htm#bleed_air_valves">Bleed Air Valve</a> is closed for a system fault.</td>
+	</tr>
+
+	<tr>
+<td class="caution">L/R<br />ENG BLEED VALVE</td>
+<td>Caution</td>
+<td class="caution">BLEED</td>
+<td>Engine <a href="pneumatics.htm#bleed_air_valves">Bleed Air Temperature</a> excessive.<br /><br /><p class="clarify">Note: The associated engine Bleed Air Valve and the HP Bleed Valve are automatically closed. The system can be reset and the valves enabled to open by selecting the associated Engine Bleed Air Switch OFF then ON.</p></td>
+	</tr>
+
+	<tr>
+<td class="advisory">L/R<br />ENG HIGH STAGE</td>
+<td>Advisory</td>
+<td class="advisory">HI STAGE</td>
+<td>Engine <a href="pneumatics.htm#bleed_air_valves">Bleed System Pressure</a> is excessive and the high pressure bleed air valve has automatically locked closed.</td>
+	</tr>
+
+	<tr>
+<td class="advisory difference">EQPT OVHT</td>
+<td>Advisory</td>
+<td class="advisory">OVHT</td>
+<td>Forward <a href="equipment_cooling.htm#equipment_cooling_overheat_light">Equipment Cooling</a> system inoperative.</td>
+	</tr>
+
+	<tr class="block300">
+<td class="advisory">FLT DECK TEMP</td>
+<td>Advisory</td>
+<td class="advisory">INOP</td>
+<td>Duct overheat, fault in the <a href="air_conditioning.htm#compartment_temperature_inop">Zone Temperature Controller</a> or <a href="air_conditioning.htm#trim_air">Trim Air</a> switch off.</td>
+	</tr>
+
+	<tr>
+<td class="advisory">L/R<br />PACK OFF</td>
+<td>Advisory</td>
+<td class="advisory">PACK OFF</td>
+<td><a href="air_conditioning.htm#pack_non-normal_operation">Pack Valve</a> is closed.</td>
+	</tr>
+
+	<tr>
+<td class="advisory">L/R<br />PACK TEMP</td>
+<td>Advisory</td>
+<td class="advisory">INOP</td>
+<td>Pack is <span class="check">shut down</span> due to an <a href="air_conditioning.htm#pack_non-normal_operation">Automatic Control System</a> fault or an overheat.<br /><br /><div class="clarify">Note: The pack has <b>not shutdown</b>. It is the automatic control system that has failed.</div></td>
+	</tr>
+
+	<tr>
+<td class="advisory">TRIM AIR</td>
+<td>Advisory</td>
+<td class="advisory">OFF</td>
+<td><a href="air_conditioning.htm#trim_air">Trim Air</a> switch off.</td>
+	</tr>
+
+	<tr>
+<td class="advisory">FWD EQPT SMOKE</td>
+<td>Advisory</td>
+<td class="advisory">SMOKE</td>
+<td>Smoke detected in the forward <a href="equipment_cooling.htm#equipment_cooling_overheat_light">Equipment Cooling</a> ducts.</td>
+	</tr>
+
+	<tr>
+<td class="advisory">L/R<br />RECIRC FAN</td>
+<td>Advisory</td>
+<td class="advisory">INOP</td>
+<td><a href="air_conditioning.htm#recirculation_fans">Fan</a> is failed or is not operating.</td>
+	</tr>
+
+</table>
+
+<p class="linktonext"><a href="../anti_ice_and_rain/engines.htm">Anti-Ice and Rain <img src="../images/next.gif" alt="Next" border="0" width="12" height="12" /></a></p>
+
+<script src="floatMenu.js" type="text/javascript"></script>
+<script src="../scripts/footer.js" type="text/javascript"></script>
+<noscript><hr /><p align="center"><a href="../noscript.htm">CONTENTS</a></p></noscript>
+<!-- end content --></div></div>
+</body>
+</html>
